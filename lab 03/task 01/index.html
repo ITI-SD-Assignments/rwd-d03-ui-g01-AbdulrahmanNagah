@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 01</title>
+
+    <link
+      rel="stylesheet"
+      href="../npm/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body class="bg-body-secondary">
+    <header>
+      <!-- *============== title ============== -->
+
+      <div class="container">
+        <h2 class="m-5 text-capitalize">The flower blog</h2>
+      </div>
+      <!-- *============== navbar ============== -->
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon bg-light rounded-1"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0 w-50 justify-content-around"
+            >
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Archives</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Contact</a>
+              </li>
+            </ul>
+
+            <button id="themeToggle" class="btn btn-outline-secondary">
+             
+              <svg
+                id="icon-moon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278z"
+                />
+              </svg>
+
+              <svg
+                id="icon-sun"
+                class="d-none"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" />
+                <path
+                  d="M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.464a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- *============== card ============== -->
+
+    <section>
+      <div class="container">
+        <div
+          class="card m-auto rounded-4 overflow-hidden mt-5 text-white w-100"
+        >
+          <img
+            src="../imgs/intro_flower.png"
+            class="object-fit-cover"
+            alt="..."
+          />
+          <div
+            class="position-absolute top-50 translate-middle-y ms-5 d-flex flex-column justify-content-between w-50"
+          >
+            <h2>Do you love flowers as much as we do</h2>
+            <p class="lead fs-6 d-none d-md-block">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
+              nihil labore voluptate, dicta porro minima quam voluptates
+              laudantium placeat cupiditate!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- *============== content ============== -->
+
+    <section class="container">
+      <div class="row">
+        <div class="left p-4 col-md-8 row flex-column g-3 shadow-lg">
+          <h2>This is the title of a blog post</h2>
+
+          <span class="fst-italic text-secondary"
+            >Posted on June 29th 2009 by
+            <a href="#" class="text-secondary"> Mads Kjaer</a> -
+            <a href="#" class="text-secondary">3 comments</a></span
+          >
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+            euismod tellus eu orci imperdiet nec rutrum lacus blandit. Cras enim
+            nibh, sodales ultricies elementum vel, fermentum id tellus. Proin
+            metus odio, ultricies eu pharetra dictum, laoreet id odio. Curabitur
+            in odio augue. Morbi congue auctor interdum. Phasellus sit amet
+            metus justo. Phasellus vitae tellus orci, at elementum ipsum. In in
+            quam eget diam adipiscing condimentum. Maecenas gravida diam vitae
+            nisi convallis vulputate quis sit amet nibh. Nullam ut velit tortor.
+            Curabitur ut elit id nisl volutpat consectetur ac ac lorem. Quisque
+            non elit et elit lacinia lobortis nec a velit. Sed ac nisl sed enim
+            consequat porttitor.
+          </p>
+
+          <div>
+            <img
+              class="shadow object-fit-cover"
+              src="../imgs/flower.png"
+              alt="flower"
+            />
+          </div>
+          <span>This is a beautiful flower</span>
+
+          <p>
+            Pellentesque ut sapien arcu, egestas mollis massa. Fusce lectus leo,
+            fringilla at aliquet sit amet, volutpat non erat. Aenean molestie
+            nibh vitae turpis venenatis vel accumsan nunc tincidunt. Suspendisse
+            id purus vel felis auctor mattis non ac erat. Pellentesque sodales
+            venenatis condimentum. Aliquam sit amet nibh nisi, ut pulvinar est.
+            Sed ullamcorper nisi vel tortor volutpat eleifend. Vestibulum
+            iaculis ullamcorper diam consectetur sagittis. Quisque vitae mauris
+            ut elit semper condimentum varius nec nisl. Nulla tempus porttitor
+            dolor ac eleifend. Proin vitae purus lectus, a hendrerit ipsum.
+            Aliquam mattis lacinia risus in blandit.
+          </p>
+          <p>
+            Vivamus vitae nulla dolor. Suspendisse eu lacinia justo. Vestibulum
+            a felis ante, non aliquam leo. Aliquam eleifend, est viverra semper
+            luctus, metus purus commodo elit, a elementum nisi lectus vel magna.
+            Praesent faucibus leo sit amet arcu vehicula sed facilisis eros
+            aliquet. Etiam sodales, enim sit amet mollis vestibulum, ipsum
+            sapien accumsan lectus, eget ultricies arcu velit ut diam. Aenean
+            fermentum luctus nulla, eu malesuada urna consequat in. Pellentesque
+            habitant morbi tristique senectus et netus et malesuada fames ac
+            turpis egestas. Pellentesque massa lacus, sodales id facilisis ac,
+            lobortis sed arcu. Donec hendrerit fringilla ligula, ac rutrum nulla
+            bibendum id. Cras sapien ligula, tincidunt eget euismod nec,
+            ultricies eu augue. Nulla vitae velit sollicitudin magna mattis
+            eleifend. Nam enim justo, vulputate vitae pretium ac, rutrum at
+            turpis. Aenean id magna neque. Sed rhoncus aliquet viverra.
+          </p>
+
+          <hr />
+
+          <div class="comments">
+            <h2 class="h4">Comments</h2>
+
+            <!-- *============== Accordion ============== -->
+
+            <div class="accordion shadow" id="accordionExample">
+              <div class="accordion-item bg-transparent">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button bg-transparent"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    George Washington
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item bg-transparent">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed bg-secondary text-white"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Benjamin Franklin
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong>
+                    It is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item bg-transparent">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed bg-transparent"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Accordion Item #3
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It
+                    is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+          <!-- *============== form ============== -->
+
+          <h2 class="h4">Comments</h2>
+
+          <form class="row g-3">
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Username</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputUsername"
+                placeholder="Username"
+              />
+            </div>
+            <div class="col-12">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail4"
+                placeholder="ex@gmail.com"
+              />
+            </div>
+
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Website</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress"
+                placeholder="1234 Main St"
+              />
+            </div>
+
+            <div class="col-12">
+              <button type="submit" class="btn btn-secondary">
+                Post comment
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- *============== Lists ============== -->
+
+        <div class="right row flex-column gap-3 p-5 col-md-4">
+          <div class="first bg-secondary p-4 rounded-3">
+            <h3 class="h5 text-white">Categories</h3>
+            <ul class="list-group">
+              <li class="list-group-item bg-secondary-subtle">category#1</li>
+              <li class="list-group-item bg-secondary-subtle">category#2</li>
+              <li class="list-group-item bg-secondary-subtle">category#3</li>
+              <li class="list-group-item bg-secondary-subtle">category#4</li>
+              <li class="list-group-item bg-secondary-subtle">category#5</li>
+            </ul>
+          </div>
+          <div class="first bg-secondary p-4 rounded-3">
+            <h3 class="h5 text-white">Archives</h3>
+            <ul class="list-group">
+              <li class="list-group-item bg-secondary-subtle">December 2005</li>
+              <li class="list-group-item bg-secondary-subtle">December 2006</li>
+              <li class="list-group-item bg-secondary-subtle">December 2007</li>
+              <li class="list-group-item bg-secondary-subtle">December 2008</li>
+              <li class="list-group-item bg-secondary-subtle">December 2009</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- *============== footer ============== -->
+
+    <footer class="bg-dark text-light pt-5 pb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h5 class="mb-3">About</h5>
+            <p class="small">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <h5 class="mb-3">Blogroll</h5>
+            <ul>
+              <li>
+                <a href="#" class="text-light text-decoration-none">NETTUTS+</a>
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >FreelanceSwitch</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >In The Woods</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Netsetter</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none">PSDTUTS+</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <h5 class="mb-3">Popular</h5>
+            <ul>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >This is the title of a blog post</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Lorem ipsum dolor sit amet</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Consectetur adipisicing elit, sed do eiusmod</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Duis aute irure dolor</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Excepteur sint occaecat cupidatat</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Reprehenderit in voluptate velit</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Officia deserunt mollit anim id est laborum</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Lorem ipsum dolor sit amet</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../npm/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
